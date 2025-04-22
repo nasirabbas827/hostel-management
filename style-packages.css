@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+:root{
+    --orange:#ffa500;
+    --black:#333;
+}
+.card-wrapper{
+    padding-top: 3.8%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+.img-display{
+    overflow: hidden;
+}
+.img-showcase{
+    display: flex;
+    width: 55rem;
+    height: 45rem;
+    transition: all 0.5s ease;
+}
+.img-showcase img{
+    min-width: 57rem;
+}
+.img-select{
+    display: flex;
+}
+.img-item{
+    margin: 0.3rem;
+    margin-top: 1%;
+    width: 13.5rem;
+    height: 13.5rem;
+}
+.img-item:hover{
+    opacity: 0.8;
+}
+.product-content{
+    padding: 2rem 1rem;
+    font-size: 3rem;
+}
+.product-title{
+    font-size: 5rem;
+    text-transform: capitalize;
+    font-weight: 700 bold;
+    position: relative;
+    color: var(--orange);
+    margin: 1rem 0;
+}
+p{
+    font-size: 1.5rem;
+}
+.product-rating{
+    color: #f64749;
+    font-size: 1.5rem;
+}
+.product-price{
+    margin: 1rem 0;
+    font-size: 2rem;
+    font-weight:900;
+}
+.single span,
+.couple span{
+    color: #f64749;
+}
+.product-detail h2{
+    text-transform: capitalize;
+    color: var(--orange);
+    padding-bottom: 0.6rem;
+    font-size: 3rem;
+}
+.product-detail p{
+    font-size: 1.5rem;
+    padding-left: 3rem;
+    opacity: 0.8;
+}
+.product-detail ul{
+    padding-left: 4rem;
+    margin: 1rem 0;
+    font-size: 1.5rem;
+}
+.product-detail ul li{
+    margin: 1px;
+    list-style: none;
+    background: url(../Picture/shoes_images/checked.png) left center no-repeat;
+    background-size: 18px;
+    padding-left: 2.5rem;
+    margin: 0.4rem 0;
+    font-weight: 600;
+    opacity: 0.9;
+}
+.product-detail ul li span{
+    font-weight: 400;
+}
+.purchase-info{
+    margin: 1.5rem 0;
+    padding-left: 4rem;
+}
+
+.purchase-info .btn{
+    border: 1.5px solid #ddd;
+    border-radius: 25px;
+    text-align: center;
+    outline: 0;
+    margin-right: 0.2rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    color: #fff;
+    background: #f64749;
+}
+.purchase-info .btn:hover{
+    opacity: 0.9;
+}
+.social-links{
+    padding-left: 4rem;
+    display: flex;
+    align-items: center;
+}
+.social-links p{
+    font-size: 2rem;
+    font-weight: bold;
+    padding-right: 1rem;
+}
+.social-links a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    color: #000;
+    border: 1px solid #000;
+    margin: 0 0.2rem;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 1.8rem;
+    transition: all 0.5s ease;
+}
+.social-links a:hover{
+    background: #000;
+    border-color: transparent;
+    color: #fff;
+}
+
+@media screen and (min-width: 994px){
+    .card{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1.5rem;
+    }
+    .card-wrapper{
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 2rem;
+    }
+    .img-display{
+        overflow: hidden;
+    }
+    .product-imgs{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .product-content{
+        padding-top: 0;
+    }
+}
