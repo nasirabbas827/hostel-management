@@ -278,7 +278,7 @@ function initMap() {
     });
 }
 </script>
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBP4cSBJ4IHPp15oyTcJgWo7kDt06Vh4jE&callback=initMap"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_OWN_API_KEY&callback=initMap"></script>
 
 
 </section>
